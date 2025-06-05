@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="alert-container d-none justify-content-center align-items-center" id="alert-layer">
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="alert">
+        <div class="symboles  d-flex justify-content-between align-items-center">
+
+          <div class="circle d-flex align-items-center gap-2">
+            <span class="c1"></span>
+            <span class="c2"></span>
+            <span class="c3"></span>
+          </div>
+          <button class="border-0 bg-transparent fw-bold fs-4">X</button>
+        </div>
+        <div class="text pt-3">
+          <p class=" error-message">Site Name or Url is not valid, Please follow the rules below :</p>
+          <div class="d-flex align-items-center"><i class="fa-regular fa-circle-right p-2"></i>
+            <p class="mess m-0">Site name must contain at least 3 characters</p>
+          </div>
+          <div class="d-flex align-items-center pt-3 pb-3"><i class="fa-regular fa-circle-right p-2"></i>
+            <p class="mess m-0">Site URL must be a valid one</p>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
+  <main class="d-flex flex-column  align-items-center justify-content-center py-5">
+    <div class="container">
+      <div class="inner">
+        <h1 class=" py-2 mb-5 mx-auto">Bookmarker</h1>
+
+        <section class="bookmark-inputs py-4 ">
+
+
+          <h2 class="text-center mt-0"> <i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites <i
+              class="fa-solid fa-bookmark"></i></h2>
+
+
+          <div class="inputs text-left py-4 ">
+
+            <label for="bname" class=" pb-2"><i class="fa-solid fa-book-bookmark pe-2"></i> Site
+              Name</label>
+            <input type="text" oninput="validateInputs(this);" id="bname" class="form-control"
+              placeholder="Bookmark Name">
+            <label for="burl" class=" pb-2 mt-4"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+            <input type="url" oninput="validateInputs(this);" id="burl" class="form-control" placeholder="Website URL">
+            <div class="d-flex justify-content-center my-3"> <button onclick="addBookmark(); "
+                class="btn btn-submit px-5 " id="submitBtn">Submit</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- table -->
+        <table class="table text-center mt-5">
+          <thead>
+            <tr>
+              <th scope="col" class="bold">index</th>
+              <th scope="col">Website Name</th>
+              <th scope="col">Visit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="rows">
+     
+
+          </tbody>
+
+        </table>
+      </div>
+
+    </div>
+  </main>
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

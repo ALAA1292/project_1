@@ -1,0 +1,197 @@
+body {
+    background-color: #f7ecde;
+}
+
+
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(53, 46, 40);
+    line-height: 60px;
+    position: relative;
+    width: fit-content;
+
+
+
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+
+    background-color: #fec260;
+    bottom: 10%;
+    top: 65%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 400ms;
+
+}
+
+h1:hover::after {
+    top: 40%;
+}
+
+h2 {
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+
+label {
+    font-family: "PT Sans Caption", sans-serif;
+    color: rgb(53, 46, 40);
+    font-weight: 600;
+
+}
+
+.bookmark-inputs {
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+
+}
+
+.form-control:focus {
+
+    border-color: #d99c39;
+
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+table thead th {
+    color: rgb(53, 46, 40);
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+table tbody th {
+    font-weight: 400;
+    color: rgb(53, 46, 40);
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+.btn-delete {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
+
+.btn-visit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+
+.alert-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.548);
+    z-index: 100;
+}
+
+.alert {
+    background-color: white;
+    width: 500px;
+}
+
+.circle span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+
+
+}
+
+.circle .c1 {
+    background-color: #f15f5d;
+}
+
+.circle .c2 {
+    background-color: #febe2e;
+}
+
+.circle .c3 {
+    background-color: #4db748;
+}
+
+.symboles button{
+    color: rgb(53, 46, 40);
+    width: fit-content;
+    
+}
+
+.error-message {
+    font-size: 21px;
+    color: rgb(53, 46, 40);
+    font-weight: 400;
+    font-family: "Bree Serif", serif;
+}
+
+.mess {
+    color: rgb(33, 37, 41);
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.text i{
+    color: #bb4120;
+}
+.no-interactions{
+pointer-events: none;
+user-select: none;
+
+}
+::selection {
+    background-color: #fec260;
+    color: rgb(33, 37, 41);
+}
+/* ----------------------------alert media------------------------ */
+@media (max-width: 576px) {
+    .alert {
+    background-color: white;
+    width: 75%;
+}
+.error-message {
+    font-size: 16px;
+    color: rgb(53, 46, 40);
+    font-weight: 400;
+    font-family: "Bree Serif", serif;
+    margin-bottom: 15px;
+}
+
+.mess {
+    color: rgb(33, 37, 41);
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+     margin-top:10px;
+}
+.text i{
+    font-size: 13px;
+}
+}
